@@ -12,32 +12,35 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-Montserrat">
-	<nav class="hidden w-full h-14 bg-white lg:flex p-4 justify-between fixed z-10">
+<body class="font-Montserrat dark:bg-gray-900">
+	<nav class="hidden w-full h-14 bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800">
 		<div class="h-auto w-auto">
-			<p class="text-xl text-primary font-black">Platzi Travel</p>
+			<p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
 		</div>
 		<div class="flex space-x-8 items-center">
-			<a class="font-bold text-md text-primary" href="#home">Home</a>
-			<a class="font-bold text-md text-primary" href="#recomendados">Locations</a>
-			<a class="font-bold text-md text-primary" href="#trending-stays">Stays</a>
-			<a class="font-bold text-md text-primary" href="#faqs">FAQs</a>
-			<a class="font-bold text-md text-primary" href="#about-us">About us</a>
+			<a class="font-bold text-sm text-primary dark:text-white" href="#home">Home</a>
+			<a class="font-bold text-sm text-primary dark:text-white" href="#recomendados">Locations</a>
+			<a class="font-bold text-sm text-primary dark:text-white" href="#trending-stays">Stays</a>
+			<a class="font-bold text-sm text-primary dark:text-white" href="#faqs">FAQs</a>
+			<a class="font-bold text-sm text-primary dark:text-white" href="#about-us">About us</a>
 		</div>
 		<div class="flex space-x-4">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 				stroke="currentColor" class="w-6 h-6">
-				<path class="text-primary" stroke-linecap="round" stroke-linejoin="round"
+				<path class="text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round"
 					d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
 			</svg>
+			<button id="toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="w-6 h-6">
+					<path class="fill-current text-primary dark:text-white" stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+				</svg>
+			</button>
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 				stroke="currentColor" class="w-6 h-6">
-				<path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round"
-					d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="w-6 h-6">
-				<path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round"
+				<path class="fill-current text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round"
 					d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
 			</svg>
 		</div>
@@ -46,65 +49,65 @@
 		<div id="home">
 			<div class="w-full h-3/4 relative">
 				<div
-					class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:justify-start lg:pt-36">
+					class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-8 lg:items-start lg:justify-start lg:pt-36">
 					<input
-						class="w-48 outline-none p-3 mt-5 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
-						type="search" placeholder="San Francisco" name="" id="search">
+						class="w-48 outline-none p-3 mt-5 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden placeholder:italic placeholder:text-slate-400 block bg-white border border-slate-300 py-2 pl-9 pr-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
+						type=" search" placeholder="San Francisco" name="" id="search">
 					<div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
 						<p class="text-5xl ml-16 font-black">Find more locations like this</p>
 					</div>
 					<button
-						class="w-56 text-xl text-primary font-semibold p-4 bg-white rounded-full shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">Explorer
+						class="w-56 text-xl text-primary font-semibold p-4 bg-white rounded-full shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16 dark:text-black">Explorer
 						More</button>
 				</div>
-				<div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+				<div class="w-full h-full lg:h-[42rem] lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
 					<img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="Fondo foto del puente de SanFrancisco">
 				</div>
 			</div>
 		</div>
 		<div class="p-6" id="recomendados">
-			<p class="text-3xl font-semibold text-primary">Our Recomendations</p>
+			<p class="text-3xl font-semibold text-primary dark:text-white">Our Recomendations</p>
 			<div
 				class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-5 overflow-y-hidden scrollbar-hide">
 				<div class="card">
 					<div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-					<div class="w-full h-2/5 bg-secondary rounded-b-lg">
+					<div class="w-full h-2/5 bg-secondary dark:bg-gray-700 rounded-b-lg">
 						<p class="text-white text-bold text-xl px-4 py-2">Norway</p>
-						<p class="text-white text-md px-4">Beautiful Landscapes</p>
+						<p class="text-white text-sm px-4">Beautiful Landscapes</p>
 					</div>
 				</div>
 				<div class="card">
 					<div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-					<div class="w-full h-2/5 bg-white rounded-b-lg">
-						<p class="text-tertiary  text-bold text-xl px-4 py-2">New York</p>
-						<p class="text-tertiary text-md px-4">Concrete jungle</p>
+					<div class="w-full h-2/5 bg-white dark:bg-gray-800 rounded-b-lg">
+						<p class="text-tertiary  text-bold text-xl px-4 py-2 dark:text-white">New York</p>
+						<p class="text-tertiary text-sm px-4 dark:text-white">Concrete jungle</p>
 					</div>
 				</div>
 				<div class="card">
 					<div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
-					<div class="w-full h-2/5 bg-secondary rounded-b-lg">
+					<div class="w-full h-2/5 bg-secondary dark:bg-gray-700 rounded-b-lg">
 						<p class="text-white text-bold text-xl px-4 py-2">Yosemite</p>
-						<p class="text-white text-md px-4">A break from the world</p>
+						<p class="text-white text-sm px-4">A break from the world</p>
 					</div>
 				</div>
 				<div class="card">
 					<div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-					<div class="w-full h-2/5 bg-white rounded-b-lg">
-						<p class="text-tertiary  text-bold text-xl px-4 py-2">Seatle</p>
-						<p class="text-tertiary text-md px-4">Big city</p>
+					<div class="w-full h-2/5 bg-white dark:bg-gray-800 rounded-b-lg">
+						<p class="text-tertiary  text-bold text-xl px-4 py-2 dark:text-white">Seatle</p>
+						<p class="text-tertiary text-sm px-4 dark:text-white">Big city</p>
 					</div>
 				</div>
 				<div class="card">
 					<div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
-					<div class="w-full h-2/5 bg-secondary rounded-b-lg">
+					<div class="w-full h-2/5 bg-secondary dark:bg-gray-700 rounded-b-lg">
 						<p class="text-white text-bold text-xl px-4 py-2">Switzerland</p>
-						<p class="text-white text-md px-4">Big city</p>
+						<p class="text-white text-sm px-4">Big city</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="trending-stays" class="p-6 h-full w-full">
-			<p class="text-3xl text-primary font-semibold">Trending Stays</p>
+			<p class="text-3xl text-primary font-semibold dark:text-white">Trending Stays</p>
 			<div class="w-full h-full flex flex-col space-y-4 items-center justify-center mt-6">
 				<div
 					class="w-full h-96 bg-chicago bg-cover rounded-xl lg:h-[38rem] lg:text-right lg:bg-center lg:pt-12">
@@ -140,31 +143,34 @@
 			</div>
 		</div>
 		<div class="w-full h-full flex flex-col" id="faqs">
-			<p class="w-full text-3xl text-primary font-extrabold mt-10 px-4">FAQs</p>
+			<p class="w-full text-3xl text-primary font-extrabold mt-10 px-4 dark:text-white">FAQs</p>
 			<div class="w-full px-4">
-				<p class="text-xl text-primary font-bold mt-8 mb-4">Cancellation Policy</p>
-				<p class="text-base font-semibold">
+				<p class="text-xl text-primary font-bold mt-8 mb-4 dark:text-white">Cancellation Policy</p>
+				<p class="text-base dark:text-gray-300">
 					For stays less than a week, it's important to notify with 3 days in advance, otherwise it will
 					be penalized.
 				</p>
 			</div>
 			<div class="w-full px-4">
-				<p class="text-xl text-primary font-bold mt-8 mb-4">Payment Methods</p>
-				<p class="text-base font-semibold">
-					We accept different payment methods: VISA, MasterCard, American Express, PayPal, and Binance.
+				<p class="text-xl text-primary font-bold mt-8 mb-4 dark:text-white">Payment Methods</p>
+				<p class="text-base dark:text-gray-300">
+					We accept different payment methods: VISA, MasterCard dark:text-gray-300, American Express, PayPal,
+					and Binance.
 				</p>
 			</div>
 			<div class="w-full px-4">
-				<p class="text-xl text-primary font-bold mt-8 mb-4">Pets</p>
-				<p class="text-base font-semibold">The pet issue will depend directly on the host.</p>
+				<p class="text-xl text-primary font-bold mt-8 mb-4 dark:text-white">Pets</p>
+				<p class="text-base dark:text-gray-300">The pet issue will depend directly on the host.
+				</p>
 			</div>
 			<div class="w-full px-4">
-				<p class="text-xl text-primary font-bold mt-8 mb-4">Safety Information</p>
-				<p class="text-base font-semibold">All our stays have insurance in case of accidents.</p>
+				<p class="text-xl text-primary font-bold mt-8 mb-4 dark:text-white">Safety Information</p>
+				<p class="text-base dark:text-gray-300">All our stays have insurance in case of accidents.
+				</p>
 			</div>
 			<div class="w-full px-4">
-				<p class="text-xl text-primary font-bold mt-8 mb-4">Long Stays</p>
-				<p class="text-base font-semibold">
+				<p class="text-xl text-primary font-bold mt-8 mb-4 dark:text-white">Long Stays</p>
+				<p class="text-base dark:text-gray-300">
 					We offer stays up to 3 months, in this case, an advance is required with 50% of the rental
 					value.
 				</p>
@@ -180,45 +186,57 @@
 		<p class="text-sm text-gray-300 font-semibold">Platzi Travel, inc</p>
 		<p class="text-sm text-gray-300 font-semibold">Follow US</p>
 	</footer>
-	<div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 justify-center items-center lg:hidden"
+	<div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 justify-center items-center lg:hidden dark:bg-gray-800 rounded-t-lg"
 		id="tab_bar">
 		<a href="#home">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="8">
+				stroke="currentColor" class="w-9 h-9">
 				<path class="fill-current text-gray-200" stroke-linecap="round" stroke-linejoin="round"
 					d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 			</svg>
 		</a>
 		<a href="#recomendados">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="8">
-				<path class="text-primary" stroke-linecap="round" stroke-linejoin="round"
+				stroke="currentColor" class="w-9 h-9">
+				<path class="text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round"
 					d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
 			</svg>
 		</a>
 		<a href="#rentas_destacadas">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="8">
+				stroke="currentColor" class="w-9 h-9">
 				<path class="fill-current text-gray-200" stroke-linecap="round" stroke-linejoin="round"
 					d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
 			</svg>
 		</a>
-		<button>
+		<button id="toggle-sm">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="8">
+				stroke="currentColor" class="w-9 h-9">
 				<path class="fill-current text-gray-200" stroke-linecap="round" stroke-linejoin="round"
 					d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
 			</svg>
 		</button>
 		<a href="#">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-				stroke="currentColor" class="8">
+				stroke="currentColor" class="w-9 h-9">
 				<path class="fill-current text-gray-200" stroke-linecap="round" stroke-linejoin="round"
 					d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
 			</svg>
 		</a>
 	</div>
 
+	<script>
+		const htmlElement = document.querySelector("html")
+		const toggleButton = document.querySelector("#toggle")
+		const toggleButtonSm = document.querySelector("#toggle-sm")
+
+		toggleButton.addEventListener("click", () => {
+			htmlElement.classList.toggle('dark');
+		})
+		toggleButtonSm.addEventListener("click", () => {
+			htmlElement.classList.toggle('dark');
+		})
+	</script>
 </body>
 
 </html>
