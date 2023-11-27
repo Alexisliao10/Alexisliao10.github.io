@@ -1,18 +1,22 @@
 {
-  "name": "tailwindcurso",
+  "name": "platzitravel_tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "tailwindcss"
+  ],
+  "author": "Alexis Liao <Alexisliao10@hotmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
     "tailwindcss-textshadow": "^2.1.3"
   }
 }
