@@ -1,2 +1,2 @@
 # Platzi-Travel
-A little project trying to understand and learn basic TailwindCss 3
+A little project to understand and learn basic TailwindCss
